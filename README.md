@@ -11,32 +11,32 @@ Author: Mohammad Mahmoud Altamimi
 
 ## Heroku applications :
 
-[api-server](https://api-server-mohammad.herokuapp.com)
+[api-server]()
 <br/>
 <br/>
 
 ## Github actions:
-[actions](https://github.com/MohammadAltamimi98/api-server/actions)
+[actions]()
 
 <br/>
 <br/>
 
 ## pull request:
-[PR](https://github.com/MohammadAltamimi98/api-server/pull/1)
+[PR]()
 <br/>
 <br/>
 
 ## Drawings:
 UML
-![image](lab4uml.png)
+![image](./idk.png)
 
 
 
 
 ## Setup
 Installed dependencies
-> npm i dotenv 
->npm i express 
+> npm i dotenv express cors
+>npm i pg
 >npm i -D jest supertest @code-fellows/supergoose
 
 <br/>
@@ -44,7 +44,7 @@ Installed dependencies
 
 ## .env requirments
 > PORT - port number
-> MONGODB_URI
+> DATABASE_URL
 
 <br/>
 <br/>

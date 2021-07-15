@@ -8,4 +8,4 @@ CREATE TABLE foods(
   id SERIAL PRIMARY KEY,
   name varchar(255),
   cuisine varchar(255)
-)
+) 

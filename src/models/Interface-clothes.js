@@ -7,11 +7,12 @@ class Interface {
 
   // the query method takes two values the query itself and then the values
   // the second arg is an array always the represents the numbers in the query
+
   read(id) {
     if (id) {
       return pool.query('SELECT * FROM clothes WHERE id =$1;', [id])
     }
-    return this.model.find({})
+    return pool.query('SELECT * FROM clothes;')
   }
 
   create(obj) {
@@ -27,7 +28,7 @@ class Interface {
     return pool.query(sql, safeValues)
   }
 
-  delete(_id) {
+  delete(id) {
     return pool.query('DELETE FROM clothes WHERE id=$1 RETURNING*;', [id])
   }
 }

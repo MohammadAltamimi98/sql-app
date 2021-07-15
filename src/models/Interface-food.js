@@ -11,7 +11,7 @@ class Interface {
     if (id) {
       return pool.query('SELECT * FROM foods WHERE id =$1;', [id])
     }
-    return this.model.find({})
+    return pool.query('SELECT * FROM foods;')
   }
 
   create(obj) {
@@ -27,9 +27,11 @@ class Interface {
     return pool.query(sql, safeValues)
   }
 
-  delete(_id) {
-    return pool.query('DELETE FROM foods WHERE id=$1 RETURNING*;', [id])
+  delete(id) {
+    return pool.query('DELETE FROM foods WHERE id=$1 RETURNING*;', [id]);
   }
 }
+
+
 
 module.exports = Interface;

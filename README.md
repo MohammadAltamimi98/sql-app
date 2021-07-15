@@ -16,7 +16,7 @@ Author: Mohammad Mahmoud Altamimi
 <br/>
 
 ## Github actions:
-[actions]()
+[actions](https://github.com/MohammadAltamimi98/sql-app/actions)
 
 <br/>
 <br/>

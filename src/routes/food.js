@@ -1,8 +1,8 @@
 'use strict';
 const express = require('express');
 const router = express.Router();
-const foodModel = require('../models/food');
-const Interface = require('../models/Interface');
+const packageName = require('../models/food-schema');
+const Interface = require('../models/Interface-food');
 const food = new Interface(foodModel);
 
 
@@ -20,7 +20,7 @@ async function getFood(req, res, next) {
   try {
     const id = req.params.id;
     const foodInfo = await food.read(id);
-    res.json({ foodInfo });
+    res.json({ foodInfo: foodInfo.rows });
   } catch (e) {
     next(e);
   }

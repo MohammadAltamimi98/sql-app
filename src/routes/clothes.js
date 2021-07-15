@@ -1,7 +1,7 @@
 'use strict';
 const express = require('express');
 const router = express.Router();
-const clothesModel = require('../models/c');
+const clothesModel = require('../models/clothes');
 const Interface = require('../models/Interface');
 const clothes = new Interface(clothesModel);
 

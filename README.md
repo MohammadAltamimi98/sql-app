@@ -9,7 +9,6 @@ Author: Mohammad Mahmoud Altamimi
 
 ## Heroku applications :
 
-
 <br/>
 <br/>
 
@@ -51,6 +50,7 @@ Installed dependencies
 > npm start
 > Endpoint: /api/v1/food 
 > Endpoint: /api/v1/clothes
+
 
 <br/>
 <br/>

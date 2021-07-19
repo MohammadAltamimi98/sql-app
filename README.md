@@ -1,6 +1,4 @@
-# api-server
-
-# basic-api-server
+#sql 
 
 ## Deployment
 Author: Mohammad Mahmoud Altamimi
@@ -11,7 +9,6 @@ Author: Mohammad Mahmoud Altamimi
 
 ## Heroku applications :
 
-[api-server](https://github.com/MohammadAltamimi98/sql-app/pull/2)
 <br/>
 <br/>
 
@@ -53,6 +50,7 @@ Installed dependencies
 > npm start
 > Endpoint: /api/v1/food 
 > Endpoint: /api/v1/clothes
+
 
 <br/>
 <br/>

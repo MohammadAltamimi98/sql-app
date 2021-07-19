@@ -4,7 +4,6 @@ const { app } = require('../src/server');
 const mockRequest = supergoose(app);
 
 
-
 describe('API SERVER', () => {
   it('can create a new clothes', async () => {
     let clothesObj = { name: 'test', brand: 'test' };

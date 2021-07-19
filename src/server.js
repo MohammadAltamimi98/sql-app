@@ -25,13 +25,8 @@ app.get('/', (req, res) => {
 })
 
 
-
-
 app.use('*', notFoundHandler);
 app.use(errorHandler);
-
-
-
 
 
 module.exports = {

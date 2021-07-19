@@ -6,12 +6,10 @@ const mockRequest = supergoose(app);
 
 describe('API SERVER', () => {
   it('can create a new clothes', async () => {
-    let clothesObj = { name: 'test', brand: 'test' };
-    const res = await mockRequest.post('/api/v1/clothes').send(clothesObj);
-    expect(res.body.name).toBe(clothesObj.name);
-    expect(res.body.brand).toBe(clothesObj.brand);
+    let clothesItem = { name: 'test', brand: 'test' };
+    const res = await mockRequest.post('/api/v1/clothes').send(clothesItem);
+    expect(res.body.name).toBe(clothesItem.name);
+    expect(res.body.brand).toBe(clothesItem.brand);
   });
-
-
 });
 

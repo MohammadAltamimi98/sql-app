@@ -7,25 +7,14 @@ const mockRequest = supergoose(app);
 
 describe('API SERVER', () => {
   it('can create a new food', async () => {
-    let foodObj = { name: 'test', cuisine: 'test' };
-    const res = await mockRequest.post('/api/v1/food').send(foodObj);
-    expect(res.body.name).toBe(foodObj.name);
-    expect(res.body.cuisine).toBe(foodObj.cuisine);
+    let foodItem = { name: 'test', cuisine: 'test' };
+    const res = await mockRequest.post('/api/v1/food').send(foodItem);
+    expect(res.body.name).toBe(foodItem.name);
+    expect(res.body.cuisine).toBe(foodItem.cuisine);
   });
 
 
-  // it('can get a food after creation', async () => {
-  //   let foodObj = { name: 'test', cuisine: 'test' };
-  //   const res = await mockRequest.get('/api/v1/food');
-  //   expect(res.body.foodinsts[0].name).toBe(foodObj.name);
-  //   expect(res.body.foodinsts[0].cuisine).toBe(foodObj.cuisine);
-  //   id = res.body.foodinsts[0]._id;
-  //   expect(res.body.foodinsts.length).toBe(1);
-  //   expect(res.status).toBe(200)
-  // });
-
-
-
+ 
 });
 
 

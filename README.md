@@ -1,6 +1,4 @@
-# api-server
-
-# basic-api-server
+#sql 
 
 ## Deployment
 Author: Mohammad Mahmoud Altamimi
@@ -11,7 +9,7 @@ Author: Mohammad Mahmoud Altamimi
 
 ## Heroku applications :
 
-[api-server]()
+
 <br/>
 <br/>
 

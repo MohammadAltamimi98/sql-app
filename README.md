@@ -33,8 +33,11 @@ UML
 ## Setup
 Installed dependencies
 > npm i dotenv express cors
+
 >npm i pg
+
 >npm i -D jest supertest @code-fellows/supergoose
+
 
 <br/>
 <br/>
@@ -48,7 +51,9 @@ Installed dependencies
 
 ## Running the application
 > npm start
+
 > Endpoint: /api/v1/food 
+
 > Endpoint: /api/v1/clothes
 
 
